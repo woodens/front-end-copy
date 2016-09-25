@@ -2,9 +2,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>首页-异步社区</title>
 	<link rel="stylesheet" href="css/index.min.css">
+	<link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css">
 	<!--[if lt IE 9]>
 	<!--使浏览器支持html5元素及css3属性-->
 	<script src="js/html5shiv.min.js"></script>
@@ -14,7 +16,14 @@
 <body>
 <header>
 	<div class="container">
-		<div class="navbar-header"></div>
+		<div class="navbar-header">
+			<a href="/" class="nav-brand"><img src="img/logo.png" alt="异步社区"></a>
+			<div class="m-search">
+				<form action="/search">
+					<div class="search-box"><i class="fa fa-search"></i><input name="q" type="text" placeholder="搜索图书/作者/类别"></div>
+				</form>
+			</div>
+		</div>
 		<div class="navbar-collapse">
 			<ul class="nav navbar-nav"></ul>
 			<div class="nav navbar-nav search"></div>
