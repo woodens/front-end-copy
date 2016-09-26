@@ -7,28 +7,224 @@
 	<title>首页-异步社区</title>
 	<link rel="stylesheet" href="css/index.min.css">
 	<link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css">
-	<!--[if lt IE 9]>
 	<!--使浏览器支持html5元素及css3属性-->
+	<!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 </head>
 <body>
-<header>
+<header class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
 			<a href="/" class="nav-brand"><img src="img/logo.png" alt="异步社区"></a>
-			<div class="m-search">
-				<form action="/search">
+			<div class="visible-xs-inline-block hidden-sm">
+				<form action="search.html">
 					<div class="search-box"><i class="fa fa-search"></i><input name="q" type="text" placeholder="搜索图书/作者/类别"></div>
 				</form>
 			</div>
+			<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">折叠导航</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
 		</div>
 		<div class="navbar-collapse">
-			<ul class="nav navbar-nav"></ul>
-			<div class="nav navbar-nav search"></div>
-			<ul class="nav navbar-nav right"></ul>
-			<ul class="nav navbar-nav right"></ul>
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a href="" class="dropdown-toggle" data-toggle="dropdown">
+						技术圈 <i class="caret"></i>
+					</a>
+					<ul class="dropdown-menu">
+						<li class="hasSub">
+							<a href="http://www.epubit.com.cn/category/details/19">软件开发</a>
+							<ul class="sub-menu2">
+								<li class="hasSub">
+									<a href="http://www.epubit.com.cn/category/details/20">编程语言</a>
+									<ul class="sub-menu2">
+										<li><a href="http://www.epubit.com.cn/category/details/21">C语言</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/30">函数式语言</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/29">.NET</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/28">Ruby/Rail</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/26">Python</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/27">Spring</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/25">JavaScript</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/24">Java</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/23">C#</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/22">C++</a></li>
+									</ul>
+								</li>
+								<li><a href="http://www.epubit.com.cn/category/details/38">算法</a></li>
+								<li class="hasSub">
+									<a href="http://www.epubit.com.cn/category/details/37">软件工程与方法</a>
+									<ul class="sub-menu2">
+										<li><a href="http://www.epubit.com.cn/category/details/50">软件架构</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/51">软件过程</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/52">软件测试与质量控制</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/53">面向对象方法</a></li>
+									</ul>
+								</li>
+								<li><a href="http://www.epubit.com.cn/category/details/36">搜索算法</a></li>
+								<li><a href="http://www.epubit.com.cn/category/details/35">并行/并发编程</a></li>
+								<li><a href="http://www.epubit.com.cn/category/details/34">图形编程</a></li>
+								<li class="hasSub">
+									<a href="http://www.epubit.com.cn/category/details/33">游戏设计与开发</a>
+									<ul class="sub-menu2">
+										<li><a href="http://www.epubit.com.cn/category/details/47">Cocos2d</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/48">Unity</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/49">OpenGL ES</a></li>
+									</ul>
+								</li>
+								<li class="hasSub">
+									<a href="http://www.epubit.com.cn/category/details/32">移动开发</a>
+									<ul class="sub-menu2">
+										<li><a href="http://www.epubit.com.cn/category/details/44">Android开发</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/45">iOS开发</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/46">跨平台</a></li>
+									</ul>
+								</li>
+								<li class="hasSub">
+									<a href="http://www.epubit.com.cn/category/details/31">架构与工具</a>
+									<ul class="sub-menu2">
+										<li><a href="http://www.epubit.com.cn/category/details/42">开发管理</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/43">SOA</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="hasSub">
+							<a href="http://www.epubit.com.cn/category/details/57">Web技术</a>
+							<ul class="sub-menu2">
+								<li><a href="http://www.epubit.com.cn/category/details/67">互联网产品</a></li>
+								<li class="hasSub"><a href="http://www.epubit.com.cn/category/details/68">交互设计</a>
+									<ul class="sub-menu2">
+										<li><a href="http://www.epubit.com.cn/category/details/148">原型设计</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/149">用户体验</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/150">可用性测试</a></li>
+									</ul>
+								</li>
+								<li class="hasSub">
+									<a href="http://www.epubit.com.cn/category/details/69">网页视觉</a>
+									<ul class="sub-menu2">
+										<li><a href="http://www.epubit.com.cn/category/details/151">Flash</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/152">Dreamweaver</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/153">Fireworks</a></li>
+									</ul>
+								</li>
+								<li class="hasSub">
+									<a href="http://www.epubit.com.cn/category/details/70">前端开发</a>
+									<ul class="sub-menu2">
+										<li><a href="http://www.epubit.com.cn/category/details/154">HTML/HTML5</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/155">CSS/CSS3</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/156">JavaScript</a></li>
+									</ul>
+								</li>
+								<li class="hasSub">
+									<a href="http://www.epubit.com.cn/category/details/71">服务端开发</a>
+									<ul class="sub-menu2">
+										<li><a href="http://www.epubit.com.cn/category/details/157">PHP</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/158">Node</a></li>
+									</ul>
+								</li>
+								<li><a href="http://www.epubit.com.cn/category/details/72">响应式</a></li>
+								<li><a href="http://www.epubit.com.cn/category/details/73">网页开发</a></li>
+								<li><a href="http://www.epubit.com.cn/category/details/74">移动端开发</a></li>
+								<li><a href="http://www.epubit.com.cn/category/details/75">网站建设</a></li>
+								<li class="hasSub">
+									<a href="http://www.epubit.com.cn/category/details/76">网站运营</a>
+									<ul class="sub-menu2">
+										<li><a href="http://www.epubit.com.cn/category/details/159">营销分析</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/160">SEO</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="hasSub">
+							<a href="http://www.epubit.com.cn/category/details/59">数据科学</a>
+							<ul class="sub-menu2">
+								<li class="hasSub">
+									<a href="http://www.epubit.com.cn/category/details/93">数据库</a>
+									<ul class="sub-menu2">
+										<li><a href="http://www.epubit.com.cn/category/details/163">Access</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/164">MySQL</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/165">Oracle</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/166">SQL Server</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/167">PostgreSQL</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/168">SQL语言</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/169">数据库理论</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/170">数据库设计与管理</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/171">NoSQL</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/172">数据挖掘</a></li>
+									</ul>
+								</li>
+								<li class="hasSub">
+									<a href="http://www.epubit.com.cn/category/details/94">大数据</a>
+									<ul class="sub-menu2">
+										<li><a href="http://www.epubit.com.cn/category/details/173">Hadoop</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/174">HBase</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/175">Spark</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/176">MapReduce</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/177">MongoDB</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/178">Redis</a></li>
+									</ul>
+								</li>
+								<li><a href="http://www.epubit.com.cn/category/details/95">存储</a></li>
+								<li><a href="http://www.epubit.com.cn/category/details/96">数据安全</a></li>
+								<li class="hasSub">
+									<a href="http://www.epubit.com.cn/category/details/97">数据统计与分析</a>
+									<ul class="sub-menu2">
+										<li><a href="http://www.epubit.com.cn/category/details/179">SAS</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/180">SPSS</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/181">数据分析</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/182">R语言</a></li>
+									</ul>
+								</li>
+								<li><a href="http://www.epubit.com.cn/category/details/98">数据可视化</a></li>
+							</ul>
+						</li>
+						<li class="hasSub">
+							<a href="http://www.epubit.com.cn/category/details/65">智能技术</a>
+							<ul class="sub-menu2">
+								<li class="hasSub">
+									<a href="http://www.epubit.com.cn/category/details/125">嵌入式与硬件</a>
+									<ul class="sub-menu2">
+										<li><a href="http://www.epubit.com.cn/category/details/228">嵌入式Linux</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/229">ARM技术</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/230">DSP技术</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/231">PLC技术</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/232">8051</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/233">接口技术</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/234">树莓派</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/235">Arduino</a></li>
+										<li><a href="http://www.epubit.com.cn/category/details/236">开源硬件</a></li><li><a href="http://www.epubit.com.cn/category/details/237">硬件描述语言</a></li></ul></li><li class="hasSub"><a href="http://www.epubit.com.cn/category/details/126">机器智能</a><ul class="sub-menu2"><li><a href="http://www.epubit.com.cn/category/details/238">机器学习</a></li><li><a href="http://www.epubit.com.cn/category/details/239">机器视觉</a></li><li><a href="http://www.epubit.com.cn/category/details/240">深度学习</a></li><li><a href="http://www.epubit.com.cn/category/details/241">虚拟现实</a></li><li><a href="http://www.epubit.com.cn/category/details/242">人机交互</a></li><li><a href="http://www.epubit.com.cn/category/details/243">自然语言处理</a></li><li><a href="http://www.epubit.com.cn/category/details/244">模式识别</a></li><li><a href="http://www.epubit.com.cn/category/details/245">机器人</a></li></ul></li></ul></li>
+					</ul>
+				</li>
+				<li>
+					<a href="/book">图书</a>
+				</li>
+				<li>
+					<a href="/book?tab=ebook">电子书</a>
+				</li>
+				<li>
+					<a href="/article">文章</a>
+				</li>
+			</ul>
+			<div class="nav navbar-nav hidden-xs">
+				<form action="search.html">
+					<div class="search-box"><i class="fa fa-search"></i><input name="q" type="text" placeholder="搜索图书/作者/类别"></div>
+				</form>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="hidden-xs">
+					<a href="" class="write"><i class="fa fa-pencil"></i>写作</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="">购物单(0)</a></li>
+				<li><a href="">注册</a></li>
+				<li><a href="">登录</a></li>
+			</ul>
 		</div>
 	</div>
 </header>

@@ -1,6 +1,116 @@
+a{
+  outline: none;
+  text-decoration: none;
+  &:link{}
+  &:visited{}
+  &:hover{}
+  &:active{}
+}
+input, textarea, select, button {
+  outline: none;
+  resize: none;
+}
+body{
+  font-family:$font-family-base;
+}
 .right{
   float:right;
 }
 .left{
   float:left;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.visible-lg-block, .visible-lg-inline, .visible-lg-inline-block,
+.visible-md-block, .visible-md-inline, .visible-md-inline-block,
+.visible-sm-block, .visible-sm-inline, .visible-sm-inline-block,
+.visible-xs-block, .visible-xs-inline, .visible-xs-inline-block {
+  display: none;
+}
+
+/*lg 大屏幕显示设备*/
+@media (min-width: 1200px) {
+  .visible-lg-block{
+    display: block!important;
+  }
+  .visible-lg-inline{
+    display: inline!important;
+  }
+  .visible-lg-inline-block{
+    display: inline-block!important;
+  }
+  .hidden-lg {
+    display: none!important;
+  }
+}
+/*md 中等显示设备*/
+@media (max-width: 1199px) {
+  .visible-md-block{
+    display: block!important;
+  }
+  .visible-md-inline{
+    display: inline!important;
+  }
+  .visible-md-inline-block{
+    display: inline-block!important;
+  }
+  .hidden-md {
+    display: none!important;
+  }
+}
+/*sm 平板*/
+@media (max-width: 991px) {
+  .visible-sm-block{
+    display: block!important;
+  }
+  .visible-sm-inline{
+    display: inline!important;
+  }
+  .visible-sm-inline-block{
+    display: inline-block!important;
+  }
+  .hidden-xs {
+    display: none!important;
+  }
+}
+
+/*xs 手机*/
+@media(max-width: 767px){
+  .visible-xs-block{
+    display: block!important;
+  }
+  .visible-xs-inline{
+    display: inline!important;
+  }
+  .visible-xs-inline-block{
+    display: inline-block!important;
+  }
+  .hidden-xs {
+    display: none!important;
+  }
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px){
+  .container{width:750px;}
+}
+@media (min-width: 992px){
+  .container{width:970px;}
+}
+@media(min-width: 1200px){
+  .container{width:1170px;}
 }
