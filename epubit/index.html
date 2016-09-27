@@ -252,5 +252,21 @@
 	</div>
 </footer>
 <div id="toTop" class="fixed-rightbottom"></div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+	$(function(){
+		$('.navbar-toggle').click(function(){
+			if($(this).hasClass('collapsed')){
+				$(this).removeClass('collapsed');
+				var target = $(this).data('target');
+				$(target).addClass('in').show(2000);
+			}else{
+				$(this).addClass('collapsed');
+				var target = $(this).data('target');
+				$(target).removeClass('in').hide(2000);
+			}
+		});
+	});
+</script>
 </body>
 </html>
