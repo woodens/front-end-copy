@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport"
+		  content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>首页-异步社区</title>
 	<link rel="stylesheet" href="css/index.min.css">
 	<link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css">
@@ -20,7 +21,8 @@
 			<a href="/" class="nav-brand"><img src="img/logo.png" alt="异步社区"></a>
 			<div class="visible-xs-inline-block hidden-sm">
 				<form action="search.html">
-					<div class="search-box"><i class="fa fa-search"></i><input name="q" type="text" placeholder="搜索图书/作者/类别"></div>
+					<div class="search-box"><i class="fa fa-search"></i><input name="q" type="text"
+																			   placeholder="搜索图书/作者/类别"></div>
 				</form>
 			</div>
 			<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -217,7 +219,8 @@
 			</ul>
 			<div class="nav navbar-nav hidden-xs">
 				<form action="search.html">
-					<div class="search-box"><i class="fa fa-search"></i><input name="q" type="text" placeholder="搜索图书/作者/类别"></div>
+					<div class="search-box"><i class="fa fa-search"></i><input name="q" type="text"
+																			   placeholder="搜索图书/作者/类别"></div>
 				</form>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
@@ -246,27 +249,46 @@
 			<div class="row">
 				<ul class="item">
 					<li><a href="">关于我们</a></li>
-				</ul>
-				<ul class="item">
 					<li><a href="">联系我们</a></li>
-				</ul>
-				<ul class="item">
 					<li><a href="">常见问题</a></li>
 				</ul>
-				<ul>
+				<ul class="item">
 					<li><a href="">成为译者</a></li>
+					<li><a href="">成为作者</a></li>
+					<li><a href="">自出版</a></li>
+				</ul>
+				<ul class="item">
+					<li><a href="">法律声明</a></li>
+					<li><a href="">用户协议</a></li>
+					<li><a href="">如何赚取积分</a></li>
 				</ul>
 				<ul>
-
+					<li>
+						<a href="">
+							<img src="" alt="">
+							<div>@人邮异步社区</div>
+						</a>
+					</li>
 				</ul>
-				<ul></ul>
+				<ul>
+					<li>
+						<div><img src="" alt=""></div>
+						<div>QQ群：368449889</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<div><img src="" alt=""></div>
+						<div>微信公众号：异步社区</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div class="line-dot"></div>
 		<div class="container copyinfo">
 			<div class="row">
-				<div class="text-left"></div>
-				<div class="text-right"></div>
+				<div class="text-left">© 2016异步社区 .  人民邮电出版社 . All rights reserved</div>
+				<div class="text-right">京ICP备05035396号-6 .</div>
 			</div>
 		</div>
 	</div>
@@ -274,21 +296,21 @@
 </footer>
 <div id="toTop" class="fixed-rightbottom">
 	<div class="go-top">
-		<div id="goto-top" class="fa fa-chevron-up"></div>
+		<div id="goto-top" class="fa fa-chevron-up" title="返回顶部"></div>
 	</div>
 	<div class="go-bottom">
-		<div id="goto-bottom" class="fa fa-chevron-down"></div>
+		<div id="goto-bottom" class="fa fa-chevron-down" title="到达页尾"></div>
 	</div>
 </div>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script>
-	$(function(){
-		$('.navbar-toggle').click(function(){
-			if($(this).hasClass('collapsed')){
+	$(function () {
+		$('.navbar-toggle').click(function () {
+			if ($(this).hasClass('collapsed')) {
 				$(this).removeClass('collapsed');
-				var 	target = $(this).data('target');
+				var target = $(this).data('target');
 				$(target).addClass('in').show(2000);
-			}else{
+			} else {
 				$(this).addClass('collapsed');
 				var target = $(this).data('target');
 				$(target).removeClass('in').hide(2000);

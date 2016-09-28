@@ -664,4 +664,10 @@ body {
 header:after, .navbar-header:after {
   clear: both; }
 
+/*尾部*/
+footer {
+  background-color: #00a493;
+  width: 100%;
+  text-align: center; }
+
 /*# sourceMappingURL=index.css.map */
