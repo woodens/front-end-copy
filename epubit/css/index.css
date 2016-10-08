@@ -578,6 +578,9 @@ body {
         line-height: 68px;
         padding: 0 13px; }
 
+  .nav-brand {
+    height: auto; }
+
   .navbar-right {
     float: right; }
 
