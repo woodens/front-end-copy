@@ -15,6 +15,9 @@ input, textarea, select, button {
 body{
   font-family:$font-family-base;
 }
+li{
+  list-style: none;
+}
 .right{
   float:right;
 }
